@@ -2,7 +2,7 @@
   "scripts": {
     "test-watch": "jest --watchAll --verbose --coverage",
     "test": "jest --verbose --coverage",
-    "start": "node app.js"
+    "start": "node functions.js"
   },
   "jest": {
     "testEnvironment": "node"

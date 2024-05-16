@@ -1,3 +1,5 @@
+const faker = require('faker-br');
+
 class User {
     constructor(name, email) {
         this.name = name;
@@ -29,4 +31,11 @@ class User {
     }
 }
 
-module.exports = User;
+class Address {
+    constructor() {
+        this.streetName = faker.address.streetName();
+        this.streetNumber = faker.random.number();
+    }
+}
+
+module.exports = { User, Address };

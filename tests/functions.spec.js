@@ -1,6 +1,6 @@
-const { calldependance, action } = require('./../function');
+const { calldependance, action } = require('./../functions');
 const supertest = require('supertest');
-const app = require('./../app');
+const app = require('../function');
 
 const server = supertest(app);
 

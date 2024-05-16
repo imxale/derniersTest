@@ -1,18 +1,35 @@
-const supertest = require('supertest');
 const functions = require('@google-cloud/functions-framework');
-const app = require('./app.js');
+const express = require('express');
+const app = express();
 
-async function calldependance(name) {
-    const response = await supertest(app).get(`/action?name=${name}`);
-    return response.body;
-}
 
-function action(name) {
-    return `hello ${name}!`;
-}
+// Middleware pour parser le JSON
+app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});
+
+app.get('/api/some-endpoint', (req, res) => {
+    res.status(200).send({ message: 'This is a GET request' });
+});
+
+app.post('/api/addresses', (req, res) => {
+    const { streetName, streetNumber } = req.body;
+    res.status(201).send({ streetName, streetNumber });
+});
+
+app.get('/action', (req, res) => {
+    const { name } = req.query;
+    if (name) {
+        res.status(200).send({ message: `hello ${name}!` });
+    } else {
+        res.status(400).send({ error: 'Name is required' });
+    }
+});
 
 functions.http('dernierstestaxel', (req, res) => {
     app(req, res);
 });
 
-module.exports = { calldependance, action };
+module.exports = app;

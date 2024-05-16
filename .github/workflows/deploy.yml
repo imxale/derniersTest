@@ -34,7 +34,7 @@ jobs:
 
       - name: Authenticate with gcloud
         run: |
-          gcloud auth activate-service-account --key-file=./tensile-tenure-423308-e5-0fa52aa16d6a.json
+          gcloud auth activate-service-account --key-file=./awesome-height-403820-c06ee3b3a086.json
 
       - name: Deploy Google function
         run: |

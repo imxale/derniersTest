@@ -38,7 +38,7 @@ jobs:
 
       - name: Deploy Google function
         run: |
-          gcloud functions deploy dernierstestaxel --gen2 --runtime=nodejs20 --region=us-east1 --source=. --entry-point=dernierstestaxel --trigger-http
+          gcloud functions deploy dernierstestaxel --gen2 --runtime=nodejs20 --region=us-east1 --source=. --entry-point=dernierstestaxel --trigger-http --allow-unauthenticated
         env:
           GOOGLE_CLOUD_PROJECT: ${{ secrets.project_id }}
 

@@ -77,7 +77,7 @@ BRF:4
 BRH:3
 end_of_record
 TN:
-SF:functions.js
+SF:function.js
 FN:4,calldependance
 FN:9,action
 FNF:2

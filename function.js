@@ -11,7 +11,7 @@ function action(name) {
     return `hello ${name}!`;
 }
 
-functions.http('derniersTestAxel', (req, res) => {
+functions.http('dernierstestaxel', (req, res) => {
     app(req, res);
 });
 

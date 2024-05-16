@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1715852860839" clover="3.2.0">
-  <project timestamp="1715852860839" name="All files">
+<coverage generated="1715853067130" clover="3.2.0">
+  <project timestamp="1715853067130" name="All files">
     <metrics statements="40" coveredstatements="35" conditionals="8" coveredconditionals="6" methods="13" coveredmethods="9" elements="61" coveredelements="50" complexity="0" loc="40" ncloc="40" packages="1" files="4" classes="4"/>
     <file name="app.js" path="/Users/axel/Documents/dev/derniersTest/app.js">
       <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="3"/>

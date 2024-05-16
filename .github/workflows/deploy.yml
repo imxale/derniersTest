@@ -18,7 +18,7 @@ jobs:
         with:
           version: 'latest'
           service_account_key: ${{ secrets.svcaccount }}
-          project_id: tensile-tenure-423308-e5
+          project_id: awesome-height-403820
 
       - name: Run install
         run: npm i

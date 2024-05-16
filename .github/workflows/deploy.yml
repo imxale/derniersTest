@@ -54,14 +54,12 @@ jobs:
         run: |
           cp tests/stress/jmeter.properties apache-jmeter-5.6.3/bin/
 
-      - name: Get Identity Token
-        id: get-identity-token
-        run: |
-          echo "IDENTITY_TOKEN=$(gcloud auth print-identity-token)" >> $GITHUB_ENV
+      - name: create Bearer token
+        run: export BEARER=$(gcloud auth print-identity-token)
 
       - name: Run JMeter tests
         run: |
-          apache-jmeter-5.6.3/bin/jmeter -n -t tests/stress/test_plan.jmx -l test_results.csv -JIDENTITY_TOKEN=${{ env.IDENTITY_TOKEN }}
+          apache-jmeter-5.6.3/bin/jmeter -n -t tests/stress/test_plan.jmx -l test_results.csv -JIDENTITY_TOKEN=${{ env.BEARER }}
 
       - name: Install latency-lingo-cli
         run: |

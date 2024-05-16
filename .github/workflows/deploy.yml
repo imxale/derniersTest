@@ -59,7 +59,7 @@ jobs:
 
       - name: Run JMeter tests
         run: |
-          apache-jmeter-5.6.3/bin/jmeter -n -t tests/stress/test_plan.jmx -l test_results.csv -JIDENTITY_TOKEN=${{ env.BEARER }}
+          apache-jmeter-5.6.3/bin/jmeter -n -t tests/stress/test_plan.jmx -l test_results.csv -JIDENTITY_TOKEN=$BEARER
 
       - name: Install latency-lingo-cli
         run: |

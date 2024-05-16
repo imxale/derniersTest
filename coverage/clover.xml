@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1715860275327" clover="3.2.0">
-  <project timestamp="1715860275327" name="All files">
-    <metrics statements="43" coveredstatements="37" conditionals="8" coveredconditionals="6" methods="14" coveredmethods="9" elements="65" coveredelements="52" complexity="0" loc="43" ncloc="43" packages="1" files="4" classes="4"/>
+<coverage generated="1715860495304" clover="3.2.0">
+  <project timestamp="1715860495304" name="All files">
+    <metrics statements="40" coveredstatements="36" conditionals="6" coveredconditionals="5" methods="13" coveredmethods="9" elements="59" coveredelements="50" complexity="0" loc="40" ncloc="40" packages="1" files="4" classes="4"/>
     <file name="app.js" path="/Users/axel/Documents/dev/derniersTest/app.js">
-      <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="3"/>
+      <metrics statements="16" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="3"/>
       <line num="1" count="2" type="stmt"/>
       <line num="2" count="2" type="stmt"/>
       <line num="5" count="2" type="stmt"/>
@@ -19,10 +19,7 @@
       <line num="22" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="23" count="2" type="stmt"/>
       <line num="25" count="1" type="stmt"/>
-      <line num="30" count="2" type="cond" truecount="1" falsecount="1"/>
-      <line num="31" count="0" type="stmt"/>
-      <line num="32" count="0" type="stmt"/>
-      <line num="36" count="2" type="stmt"/>
+      <line num="29" count="2" type="stmt"/>
     </file>
     <file name="classes.js" path="/Users/axel/Documents/dev/derniersTest/classes.js">
       <metrics statements="13" coveredstatements="11" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="3"/>

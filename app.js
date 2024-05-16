@@ -26,11 +26,4 @@ app.get('/action', (req, res) => {
     }
 });
 
-// Lancer le serveur seulement si ce n'est pas un module importé
-if (!module.parent) {
-    app.listen(3000, () => {
-        console.log('Server is running on port 3000');
-    });
-}
-
 module.exports = app;
